@@ -1,0 +1,53 @@
+:root {
+    /* fonts */
+    --f1: Jost;               /*font-main*/
+    --f2: "Merienda One";    /*font-merienda-one*/
+  
+    /* font sizes */
+    --h2: 64px;                  /*ProjectNameText*/
+    --HeroText: 72px;                 /*HeroText*/
+    --vt: 12px;                  /*KeyFeatureVerticalText*/
+    --h3: 16px;                  /*title */
+    --bt: 24px;                 /*BodyText*/
+    --tl1: 54px;                  /*tagline2 text*/
+    --nv: 24px;                   /*navMenu*/  
+    --mn: 40px;                  /*MyName*/  
+  --ht: 20px;                    /*sectionName-horizontalText*/
+
+
+  
+    /* Colors */
+    --back-ground: #fbfbfb;
+    --black: #111;
+    --white: #fff;
+    --color-black: #000;
+    --Orange: #ff7b00;
+    --color-darkslategray: #3e3e3e;
+    --primary-color:var(--Orange)
+  
+    /* Gaps */
+    --gap-13xl: 32px;
+    --gap-xs: 12px;
+    --gap-5xl: 24px;
+    --gap-29xl: 48px;
+    --gap-503xl: 522px;
+  
+    /* Paddings */
+    --padding-261xl: 280px;
+    --padding-212xl: 231px;
+    --padding-3xs: 10px;
+  }
+
+  pt{
+    
+    font-family: Jost;
+    font-size: 96px;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 96px */
+    text-transform: uppercase;
+    vertical-align: baseline;
+    }
+  

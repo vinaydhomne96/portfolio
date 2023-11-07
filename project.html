@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda One:wght@400&display=swap" />
+</head>
+
+<body>
+    <script>
+        const headerPath = 'header.html';
+        fetch(headerPath)
+          .then(response => response.text())
+          .then(data => {
+            const headerContainer = document.createElement('div');
+            headerContainer.innerHTML = data;
+            document.body.insertBefore(headerContainer, document.body.firstChild);
+          });
+      </script>
+
+    <div class="point-text">
+        <canvas id="hoverText" class="hover-point"></canvas>
+        <script type="module" src="/pointText"></script>
+    </div>
+
+    <div class="background-icon-down" id="pro-down-arrow">
+        <img class="b-icons" src="./public/arrow-down.svg" alt="">
+    </div>
+
+    <!-- <section class="hello-container">
+        <h5 id="pro-hero-text">
+            Projects
+        </h5>
+    </section> -->
+
+    <section class="pro-section">
+        <a href="https://www.behance.net/gallery/142501343/Krishi-Yug" target="_blank" class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">UI/UX Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/KrishiYug@2x.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Krishi Yug</h3>
+                        <p class="description">Designed for Farmers Agri Managements.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/154795815/Website-Design-KONNBOT" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">UI/UX Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/konnbot-vinay.png" alt="Vinay-Konnbot">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Konnbot Website Design</h3>
+                        <p class="description">Designed for construction consultancy.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/183281461/-Women-Skill-Development-Service-Design" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Service Design, User Study, Videography</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-udha.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">उद्यमिनी (Udhyamini) </h3>
+                        <p class="description">Nurturing women skills development in rural area.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/159768097/Usability-Evaluation-Swiggy" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Usability Evaluation, User Testing</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-swiggy.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Usability Evaluatuon-Swiggy</h3>
+                        <p class="description">Heuristic and card shorting methods used for evaluation. </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/160063363/Usability-Evaluation-Spotify" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Usability Evaluation, User Testing</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-spotify.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Usability Evaluatuon-Spotify</h3>
+                        <p class="description">Card Shorting, thinl Aloud techniques used for evaluation.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/181557843/Schematic-Map-Seoni" target="_blank" class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Data Visualization, Map Design </p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-seoni.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Seoni Tourist Map</h3>
+                        <p class="description">Map is designed for tourist to find attractions around the Seoni.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/154056897/User-Study-Work-Break-of-Mess-Staff" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Qualitative User Study, Probs, Interviews</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-userstudy.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Work Break of Mess Staff</h3>
+                        <p class="description">Diving into the lives of people behind the Messes of IIT Bombay </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/162701305/Quantitative-research-Methods" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Quantitative Research Methods</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/KrishiYug@2x.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">TWS Sound-Price Perception</h3>
+                        <p class="description">Designed for Farmers Agri Managements</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/159593495/AuntySocial-Social-Media-Application" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Mind Mapping, User journey, Empathy Map</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-auntysocial.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Aunty Social</h3>
+                        <p class="description">A system design for homemakers community building. </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/183791039/Maratha-Warriors-Portal" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">UI/UX Design, Fiction Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/maratha-vinay.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Maratha Worriors Portal</h3>
+                        <p class="description">Designed a dashboard for maratha army to strategies attack.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/173535233/Future-of-Habitats-Design-Fiction" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Design Fiction, Magazine Design, Sustainability </p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-design-fiction.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Future of Habitats : Design Fiction</h3>
+                        <p class="description">Designed a digatic AD magazine for baubotanik Architecture practice.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/160173149/ULU-A-travel-Companion" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Interaction Design, Video Protyping</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-ulu.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">ULU - A travel Companion </h3>
+                        <p class="description">An autonomous drone experience for adventure travellers.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/183553127/Story-Book-Sustainable-Development-Goals-(SDGs)"
+            target="_blank" class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Story Book, Illustrations</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/book1-vinay.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">बारिश में स्कूल (School in Rain)</h3>
+                        <p class="description">A story to help children understand the SDG's Goals.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/183602847/Farmers-Story-Book-Gondi-Art-Form" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Story Book, Illustrations, Art Form</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-book2.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Farmer's Story Book: Gondi Art Form</h3>
+                        <p class="description">A story to help children understand the SDG's Goals.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/154704137/Insty-Data" target="_blank" class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">UI/UX Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-insty.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Insty Data</h3>
+                        <p class="description">A portal to manage an institute's academic activities.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/181900669/Radii-Manipulation" target="_blank" class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">3D Form Exploration</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/KrishiYug@2x.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Radii Manipulation</h3>
+                        <p class="description">Various compositions of 3D forms and physical models.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/183371133/EDUCAM-Photography-Learning" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">UI/UX Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-educam .png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">EDUCAM - Photography Learning</h3>
+                        <p class="description">An application to understand the basic of camera controls and
+                            photography.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/142503385/Moon-Light-Watch" target="_blank" class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Product Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-watch.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Moon Light Watch</h3>
+                        <p class="description">Labyrinth Game-inspired fun watch designed in Moonlight Theme.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/142505241/Coffee-Bean-Container" target="_blank" class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Product Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-coffee.jpg" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Coffee Bean Container</h3>
+                        <p class="description">Redesign of a daily-used product for a universal user group context</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/153788567/Regenerative-Flood-Resilient-Habitat-Kerala" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Flood Resiliant Habitat, Architecture</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-thersis.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Regenerative Flood Resilient Habitat, Kerala</h3>
+                        <p class="description">Architectural project to help flooded villages regenerate faster from
+                            disaster.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/88886495/Architecture-Portfolio-Vinay-Kumar" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Architectualal Portfolio</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-architeture.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Architecture Portfolio</h3>
+                        <p class="description">Compilation of selected works during the B.Arch program. </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/127313397/Visualization-Work" target="_blank" class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Visualization, 3D Modeling</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-render02.jpg" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Visualization Work</h3>
+                        <p class="description">Architectural Renderings and Explorations through Art Mediums.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.behance.net/gallery/142507249/Lakshya-Harit-Mundapar" target="_blank"
+            class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">Community initiation </p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/vinay-lakshya.jpg" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Visualization Work</h3>
+                        <p class="description">Community Initiative: Enabling Awareness and Encouragement for
+                            Plantation.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+
+    <!-- <section class="pro-section">
+        <div class="pro-container">
+            <div class="pro-holder">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">UI/UX Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/KrishiYug@2x.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Krishi Yug</h3>
+                        <p class="description">Designed for Farmers Agri Managements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pro-container-2">
+            <div class="pro-holder-2">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">UI/UX Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/KrishiYug@2x.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Krishi Yug</h3>
+                        <p class="description">Designed for Farmers Agri Managements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pro-container-2">
+            <div class="pro-holder-2">
+                <div class="pro-tag">
+                    <p class="pro-tag-text">UI/UX Design</p>
+                </div>
+                <div class="pro-image-title">
+                    <img class="pro-image" src="./public/KrishiYug@2x.png" alt="">
+                    <div class="pro-detail">
+                        <h3 id="pro-name">Krishi Yug</h3>
+                        <p class="description">Designed for Farmers Agri Managements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <div class="background-icon-down" id="pro-down-arrow-2">
+        <a href="./project.html" class="pro-b-icons" ><svg  xmlns="http://www.w3.org/2000/svg" width="132" height="213" viewBox="0 0 132 213"
+           >
+            <path d="M132 65.5L66.5 5.72619e-06M66.5 5.72619e-06L0.999987 65.5M66.5 5.72619e-06L66.5 213"
+                 /></svg></a>
+        
+    </div>
+    <script>
+        const footerPath = "./footer.html";
+        fetch(footerPath)
+          .then(response => response.text())
+          .then(data => {
+            const footerContainer = document.createElement('div');
+            footerContainer.innerHTML = data;
+            document.body.appendChild(footerContainer);
+          });
+      </script>
+</body>

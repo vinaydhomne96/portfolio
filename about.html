@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda One:wght@400&display=swap" />
+</head>
+
+<body>
+    <div class="forground">
+        <header>
+            <script>
+                const headerPath = 'header.html';
+                fetch(headerPath)
+                    .then(response => response.text())
+                    .then(data => {
+                        const headerContainer = document.createElement('div');
+                        headerContainer.innerHTML = data;
+                        document.body.insertBefore(headerContainer, document.body.firstChild);
+                    });
+            </script>
+        </header>
+
+        <div class="point-text">
+            <canvas id="aboutHoverText" class="about-hover-text"></canvas>
+            <script type="module" src="/aboutPointText,jc"></script>
+        </div>
+
+        <!-- <section class="hello-container">
+            <h5>
+                Hello There!
+            </h5>
+        </section> -->
+
+        <section class="about-description">
+
+            <p class="body-text-about">
+                I'm Vinay Kumar, an enthusiastic Interaction Design student at the Industrial Design Center, Indian
+                Institute of Technology, Bombay.
+                My journey in the design world has kindled a deep passion for humanizing technology through design. I'm
+                committed to crafting user-centered experiences that deeply resonate with people. My design philosophy
+                is
+                rooted in the constructivist ideology, where I strongly believe in design's transformative power. It has
+                the
+                ability to shape and enhance our interactions with the world. I approach my work with a social
+                perspective,
+                understanding the profound impact design can have on society and addressing real-life challenges with
+                innovative solutions.
+            </p>
+            <img class="about-image" src="./public/about_pic.svg" alt="">
+        </section>
+
+        <section class="education-section">
+            <h6> Education</h6>
+            <div class="institute-section">
+                <div class="institute-detail">
+                    <div class="institute-degree">
+                        <h4>
+                            Batchlor of Architecture <span class="year">| 2014-2019</span>
+                        </h4>
+                        <p class="institute-name">
+                            School of Planning and Architecture, Bhopal, MP
+                        </p>
+                    </div>
+                    <p class="description">
+                        Got the exposure to indulge myself in various design task and participated in national and
+                        international completions.
+                    </p>
+                </div>
+                <div class="institute-detail">
+                    <div class="institute-degree">
+                        <h4>
+                            Masters in Design <span class="year">| 2022 - Ongoing</span>
+                        </h4>
+                        <p class="institute-name">
+                            IDC, Indian Institute of technology, Bombay, MH
+                        </p>
+                    </div>
+                    <p class="description">
+                        Design philosophy, theories, user study, research methods, user testing, contextual enquiry, and
+                        many design tools has developed through this MDes journey
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="experiance-section">
+        <h6> Work Experiance</h6>
+        <div class="experiance-holder">
+            <div class="experiance-name">
+                <h4 id="experiance-heading">User Study | Learning Companions NGO, Nagpur
+                </h4>
+                <h4 id="experiance-heading">March - June 2023 | Guided by Prof. Girish Dalvi
+                </h4>
+                <p class="description">Worked as a fellow to explore participant and non-participant research methods
+                    Focusing on education of semi-nomadic Bharwad children up to 4th grade. Currently, exploring the
+                    interactive tools for language development.
+                </p>
+            </div>
+
+            <div class="experiance-name">
+                <h4 id="experiance-heading">UX/UI Designer | Konnbot Consultancy Bhopal
+                </h4>
+                <h4 id="experiance-heading">April 2021 - March 2022
+                </h4>
+                <p class="description"><span class="description-bold">Concept and Design Development:</span> Spearheaded
+                    the Interaction Design team's efforts in user-oriented research, analysis, and conceptualization.
+                </p>
+                <p class="description"><span class="description-bold">Application platform:</span> Developed diverse
+                    platforms, including mobile applications, live websites, and an under-development web application.
+                </p>
+                <p class="description"> <span class="description-bold">Prototype testing:</span> Involved in prototype
+                    testing with users and experts to identify and address challenges.
+                </p>
+            </div>
+
+            <div class="experiance-name">
+                <h4 id="experiance-heading">UNISCO Louis I Kahn Trophy- 2017 | Top 10 <br>
+                    Documentation and Research of Kuchaman Fort
+                </h4>
+                <p class="description">Worked as a fellow to explore participant and non-participant research methods
+                    Focusing on education of semi-nomadic Bharwad children up to 4th grade.
+                    Currently, exploring the interactive tools for language development.
+                </p>
+            </div>
+
+            <div class="experiance-name">
+                <h4 id="experiance-heading">Part Time Architect | Atelier Brunot, Troyes, France
+                </h4>
+                <h4 id="experiance-heading">November 2020 - February 2022
+                </h4>
+                <p class="description">Created approval and presentation drawings.
+                </p>
+                <p class="description">Conceptualized designs, incorporating 3D modeling and visualization.
+
+                </p>
+            </div>
+            <div class="experiance-name">
+                <h4 id="experiance-heading">Junior Architect | Fourth Dimension Architect Pvt Ltd, Pune
+                </h4>
+                <h4 id="experiance-heading">February 2020 - April 2021
+                </h4>
+                <p class="description">Involved in both concept and design development stages.
+                </p>
+                <p class="description">Prepared inspection and presentation drawings.
+                </p>
+            </div>
+            <div class="experiance-name">
+                <h4 id="experiance-heading">Design Internship | Archwert Planners and Designers, Pune <br>
+                    December 2017 - June 2018
+                </h4>
+                <p class="description">Participated in global projects as Amazon headquarter, Kharghar Master plan
+                    Learned diverse sustainable design techniques and honed technical skills.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="achievement-container">
+        <h6> Achievements</h6>
+        <div class="achievement-google">
+            <div class="achievement-name">
+                <div class="experiance-name">
+                    <h4 id="experiance-heading">Berkeley Essay Prize- 2018 | World Top - 20 <br>
+                        House is My Teacher
+                    </h4>
+                    <p class="description">We have been shortlisted as finalists for an essay competition, where we have
+                        chosen the rural skill-sharing environment and explored it through the lens of vernacular
+                        architecture.
+                    </p>
+                </div>
+
+                <div class="experiance-name">
+                    <h4 id="experiance-heading">G-sen Trophy- 2017 | Citation <br>
+                        Application Design (Social Empowerment)
+
+                    </h4>
+                    <p class="description">We have developed a digital system of applications and devices for slums and
+                        gig
+                        workers in Bhopal to share their work and create an ecosystem of work-sharing. It was a
+                        socio-economic empowerment solution.
+                    </p>
+                </div>
+
+                <div class="experiance-name">
+                    <h4 id="experiance-heading">UNISCO Louis I Kahn Trophy- 2017 | Top 10 <br>
+                        Documentation and Research of Kuchaman Fort
+                    </h4>
+                    <p class="description">In this competition, we have documented and researched Kuchaman fort, created
+                        drawings, 3D models, and renderings.
+                    </p>
+                </div>
+
+                <div class="experiance-name">
+                    <h4 id="experiance-heading">Annual NASA Design Competition- 2016 | 3rd
+                    </h4>
+                    <h4 id="experiance-heading">Conservation of UCIL, Bhopal
+
+                    </h4>
+                    <p class="description">We have proposed ideas to rejuvenate the UCIL-Bhopal gas tragedy site. During
+                        this time, I have explored various digital visualization tools.
+                    </p>
+                </div>
+                <div class="experiance-name">
+                    <h4 id="experiance-heading">Hours Aliens Hub- 2019 Participated | Settlement Design
+                    </h4>
+                    <h4 id="experiance-heading">Experimental Design
+                    </h4>
+                    <p class="description">We have generated ideas for Alien's hub. In this competition, we have
+                        explored
+                        various ideation methods to generate ideas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="google-guide">
+                <img src="./public/google-rating.svg" alt="google-map">
+                <img src="./public/google-views.svg" alt="Google-map-views">
+
+                <p class="body-text" id="google-map-guide">Google Map Views</p>
+                <p class="description" id="google-description">Through my passion for photography, I've captured and
+                    shared over 1k photos, drawing people's attention. Exploring uncharted places is my personal
+                    interest, beautifully
+                    documented through my lens.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="interest">
+        <img src="./public/interests.svg" alt="interests">
+        <p class="body-text" id="interest-text-italic">Some glimpses of my interests journey.</p>
+    </section>
+
+    <div class="interest-description">
+        <p class="body-text" id="interest-text-bold"> What I love to do when I am not working</p>
+        <p class="body-text" id="interest-text"> Besides my work, I also love to participate in volunteering for various
+            camps and
+            I am interested in exploring cultures, nature, architecture, and many more. I also do photography,
+            woodworking, handcraft modeling, and other creative pursuits. I love to explore the unexplored, and you
+            will often find me traveling.</p>
+    </div>
+    <section class="media-link">
+        <div class="about-media-links">
+            <a href="https://www.behance.net/vinaykumar32" target="_blank"><button> Behance</button></a>
+            <a href="resume.html" target="_blank"><button> Resume</button></a>
+
+        </div>
+        </div>
+    </section>
+
+    </section>
+    <script>
+        const footerPath = "./footer.html";
+        fetch(footerPath)
+            .then(response => response.text())
+            .then(data => {
+                const footerContainer = document.createElement('div');
+                footerContainer.innerHTML = data;
+                document.body.appendChild(footerContainer);
+            });
+    </script>
+    </div>
+</body>
+
+</html>
